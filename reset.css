@@ -1,0 +1,50 @@
+/* 小程序没有 root 元素 */
+root {
+  /* 小程序的根字体大小默认为 16px，即 1rem = 16px，可通过 page-meta 修改，但是 Taro 尚未支持 */
+  /* https://developers.weixin.qq.com/miniprogram/dev/component/page-meta.html */
+  font-size: 16px;
+}
+
+page,
+page::before,
+page::after,
+view,
+view::before,
+view::after,
+button,
+button::before,
+button::after,
+image,
+image::before,
+image::after,
+text,
+text::before,
+text::after {
+  box-sizing: border-box;
+}
+
+page,
+view,
+button,
+image {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+page {
+  font-size: 16px;
+  line-height: 1.15;
+}
+
+button::after {
+  display: none;
+}
+
+text {
+  font-size: 14px;
+  line-height: 1.15;
+}
